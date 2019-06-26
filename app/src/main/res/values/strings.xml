@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name"> bananaCamelApp</string>
+    <string name="bpkm"> Number of Banana Per kilometer</string>
+    <string name="number_of_camel"> Number of camel</string>
+    <string name="distance"> Distance</string>
+    <string name="number_of_bananas"> Number of Bananas</string>
+</resources>

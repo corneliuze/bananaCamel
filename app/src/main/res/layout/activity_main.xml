@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+        <TextView android:layout_width="wrap_content"
+                  android:id="@+id/answer_tv"
+                  android:textSize="25sp"
+                  android:layout_marginTop="40dp"
+                  android:textColor="@color/black"
+                  android:textStyle="bold"
+                  android:layout_centerHorizontal="true"
+                  android:layout_height="wrap_content"/>
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="150dp"
+                android:layout_height="wrap_content">
+
+            <EditText android:layout_width="250dp"
+                      android:layout_margin="10dp"
+                      android:hint="@string/number_of_bananas"
+                      android:inputType="number"
+                      android:background="@drawable/edittext_drawable"
+                      android:id="@+id/numberOfBanana_et"
+                      android:layout_height="60dp"/>
+            <EditText android:layout_width="250dp"
+                      android:hint="@string/distance"
+                      android:inputType="number"
+                      android:background="@drawable/edittext_drawable"
+                      android:layout_margin="10dp"
+                      android:layout_below="@id/numberOfBanana_et"
+                      android:id="@+id/distance_et"
+                      android:layout_height="60dp"/>
+            <EditText android:layout_width="250dp"
+                      android:layout_margin="10dp"
+                      android:inputType="number"
+                      android:hint="@string/number_of_camel"
+                      android:background="@drawable/edittext_drawable"
+                      android:layout_below="@id/distance_et"
+                      android:id="@+id/numberOfCamel_et"
+                      android:layout_height="60dp"/>
+            <EditText android:layout_width="250dp"
+                      android:layout_margin="10dp"
+                      android:background="@drawable/edittext_drawable"
+                      android:layout_below="@id/numberOfCamel_et"
+                      android:hint="@string/bpkm"
+                      android:inputType="number"
+                      android:id="@+id/numberOfBananaPerKm_et"
+                      android:layout_height="60dp"/>
+
+            <Button android:layout_width="250dp"
+                    android:id="@+id/calculateButton"
+                    android:text="Calculate"
+                    android:background="@color/blue"
+                    android:textColor="@color/white"
+                    android:layout_height="50dp"
+            android:layout_below="@id/numberOfBananaPerKm_et"
+            android:layout_margin="10dp"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</layout>
